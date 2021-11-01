@@ -1,5 +1,5 @@
 import { userConstants } from '../Constants';
-import {navigate} from '../Router/RootNavigation'
+import { navigate } from '../Router/RootNavigation'
 
 export const userActions = {
     login
@@ -8,9 +8,9 @@ export const userActions = {
 function login(username, password) {
     return dispatch => {
         dispatch(request({ username }));
-        let user = {username, password};
+        let user = { username, password };
         dispatch(success(user));
-        navigate("RepoList",{});
+        navigate("RepoList", {});
     };
 
     function request(user) { return { type: userConstants.LOGIN_REQUEST, user } }

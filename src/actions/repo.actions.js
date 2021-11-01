@@ -11,7 +11,7 @@ function searchTextUpdate(searchText) {
 
 
 function clearText() {
-    return { type: repoConstants.REPO_SEARCH_TEXT_CHANGE,searchText:'' };
+    return { type: repoConstants.REPO_SEARCH_TEXT_CHANGE, searchText: '' };
 }
 
 function getReposList(searchText) {
@@ -26,6 +26,6 @@ function getReposList(searchText) {
     };
 
     function request() { return { type: repoConstants.REPO_FETCH_REQUEST } }
-    function success(repoList) { return { type: repoConstants.REPO_FETCH_SUCCESS, repoList:repoList.items } }
+    function success(repoList) { return { type: repoConstants.REPO_FETCH_SUCCESS, repoList: repoList.items } }
     function failure(error) { return { type: repoConstants.REPO_FETCH_FAILURE, error } }
 }

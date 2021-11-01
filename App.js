@@ -7,8 +7,8 @@ import Router from "./src/Router/Router";
 function App() {
   return (
     <Provider store={store}>
-      <View style={{flex:1, justifyContent:'center',alignContent:'center'}}>
-         <Router/>
+      <View style={{ flex: 1, justifyContent: 'center', alignContent: 'center' }}>
+        <Router />
       </View>
     </Provider>
   );
